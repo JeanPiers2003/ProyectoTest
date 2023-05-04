@@ -1,0 +1,37 @@
+<div *ngIf="!showResult">
+  <h2>Formulario de elección de carrera</h2>
+  <form (ngSubmit)="submitForm()">
+    <label for="question1">¿Qué área te gusta más?</label>
+    <select id="question1" name="question1" [(ngModel)]="answers.question1">
+      <option value="">Selecciona una opción</option>
+      <option value="salud">Salud</option>
+      <option value="ingenieria">Ingeniería</option>
+      <option value="arte">Arte</option>
+    </select>
+
+    <label for="question2">¿Qué habilidades tienes?</label>
+    <select id="question2" name="question2" [(ngModel)]="answers.question2">
+      <option value="">Selecciona una opción</option>
+      <option value="analisis">Análisis</option>
+      <option value="creatividad">Creatividad</option>
+      <option value="comunicacion">Comunicación</option>
+    </select>
+
+    <!-- Agrega más preguntas según sea necesario -->
+
+    <button type="submit">Enviar respuestas</button>
+  </form>
+</div>
+
+<div *ngIf="showResult">
+  <h2>Resultado de la elección de carrera</h2>
+  <p>Según tus respuestas, la carrera recomendada es: {{ recommendedCareer }}</p>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+  <button type="button" class="btn btn-secondary" (click)="resetForm()">Reiniciar</button>
+</div>
+
+
+
+
+
+
