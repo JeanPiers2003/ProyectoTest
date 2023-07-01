@@ -1,1 +1,23 @@
-<p>pagina4 works!</p>
+<h2>Listado de Carreras</h2>
+
+<ul>
+  <li *ngFor="let carrera of carreras">
+    {{ carrera.title }} - {{ carrera.rama }} - {{ carrera.Description }}
+    <button (click)="eliminarCarrera(carrera)">Eliminar</button>
+    <button (click)="editarCarrera(carrera)">Editar</button>
+  </li>
+</ul>
+
+<h2>Agregar Carrera</h2>
+
+<input type="text" [(ngModel)]="nuevaCarrera.title" placeholder="Título">
+<input type="text" [(ngModel)]="nuevaCarrera.rama" placeholder="Rama">
+<input type="text" [(ngModel)]="nuevaCarrera.Description" placeholder="Descripción">
+<button (click)="agregarCarrera()">Agregar</button>
+
+<h2>Editar Carrera</h2>
+
+<input type="text" [(ngModel)]="carreraEditada.title" placeholder="Título">
+<input type="text" [(ngModel)]="carreraEditada.rama" placeholder="Rama">
+<input type="text" [(ngModel)]="carreraEditada.Description" placeholder="Descripción">
+<button (click)="guardarCambios()">Guardar Cambios</button>

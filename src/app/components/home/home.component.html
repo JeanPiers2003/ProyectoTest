@@ -8,7 +8,7 @@
       <option value="ingenieria">Ingeniería</option>
       <option value="arte">Arte</option>
     </select>
-
+    <br>
     <label for="question2">¿Qué habilidades tienes?</label>
     <select id="question2" name="question2" [(ngModel)]="answers.question2">
       <option value="">Selecciona una opción</option>
@@ -16,7 +16,70 @@
       <option value="creatividad">Creatividad</option>
       <option value="comunicacion">Comunicación</option>
     </select>
-
+    <br>
+    <label for="question3">¿Qué habilidades tienes?</label>
+    <select id="question3" name="question3" [(ngModel)]="answers.question3">
+      <option value="">Selecciona una opción</option>
+      <option value="analisis">Análisis</option>
+      <option value="creatividad">Creatividad</option>
+      <option value="comunicacion">Comunicación</option>
+    </select>
+    <br>
+    <label for="question4">¿Qué habilidades tienes?</label>
+    <select id="question4" name="question4" [(ngModel)]="answers.question4">
+      <option value="">Selecciona una opción</option>
+      <option value="analisis">Análisis</option>
+      <option value="creatividad">Creatividad</option>
+      <option value="comunicacion">Comunicación</option>
+    </select>
+    <br>
+    <label for="question5">¿Qué habilidades tienes?</label>
+    <select id="question5" name="question5" [(ngModel)]="answers.question5">
+      <option value="">Selecciona una opción</option>
+      <option value="analisis">Análisis</option>
+      <option value="creatividad">Creatividad</option>
+      <option value="comunicacion">Comunicación</option>
+    </select>
+    <br>
+    <label for="question6">¿Qué habilidades tienes?</label>
+    <select id="question6" name="question6" [(ngModel)]="answers.question6">
+      <option value="">Selecciona una opción</option>
+      <option value="analisis">Análisis</option>
+      <option value="creatividad">Creatividad</option>
+      <option value="comunicacion">Comunicación</option>
+    </select>
+    <br>
+    <label for="question7">¿Qué habilidades tienes?</label>
+    <select id="question7" name="question7" [(ngModel)]="answers.question7">
+      <option value="">Selecciona una opción</option>
+      <option value="analisis">Análisis</option>
+      <option value="creatividad">Creatividad</option>
+      <option value="comunicacion">Comunicación</option>
+    </select>
+    <br>
+    <label for="question8">¿Qué habilidades tienes?</label>
+    <select id="question8" name="question8" [(ngModel)]="answers.question8">
+      <option value="">Selecciona una opción</option>
+      <option value="analisis">Análisis</option>
+      <option value="creatividad">Creatividad</option>
+      <option value="comunicacion">Comunicación</option>
+    </select>
+    <br>
+    <label for="question9">¿Qué habilidades tienes?</label>
+    <select id="question9" name="question9" [(ngModel)]="answers.question9">
+      <option value="">Selecciona una opción</option>
+      <option value="analisis">Análisis</option>
+      <option value="creatividad">Creatividad</option>
+      <option value="comunicacion">Comunicación</option>
+    </select>
+    <br>
+    <label for="question10">¿Qué habilidades tienes?</label>
+    <select id="question10" name="question10" [(ngModel)]="answers.question10">
+      <option value="">Selecciona una opción</option>
+      <option value="analisis">Análisis</option>
+      <option value="creatividad">Creatividad</option>
+      <option value="comunicacion">Comunicación</option>
+    </select>
     <!-- Agrega más preguntas según sea necesario -->
 
     <button type="submit">Enviar respuestas</button>
@@ -25,9 +88,9 @@
 
 <div *ngIf="showResult">
   <h2>Resultado de la elección de carrera</h2>
-  <p>Según tus respuestas, la carrera recomendada es: {{ recommendedCareer }}</p>
+  <p>Según tus respuestas, la carrera recomendadwbaa es: {{ recommendedCareer }}</p>
   <button type="submit" class="btn btn-primary">Enviar</button>
-  <button type="button" class="btn btn-secondary" (click)="resetForm()">Reiniciar</button>
+  <button type="reset" class="btn btn-secondary" (click)="resetForm()">Reiniciar</button>
 </div>
 
 
